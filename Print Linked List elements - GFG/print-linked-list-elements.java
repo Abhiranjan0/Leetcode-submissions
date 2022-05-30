@@ -72,10 +72,11 @@ class Solution
     // for empty list
     void display(Node head)
     {
-           
-           while(head != null) {
-              System.out.print(head.data + " ");
-              head = head.next;
+           Node curr = head;
+           while(curr.next != null) {
+              System.out.print(curr.data + " ");
+              curr = curr.next;
            }
+           System.out.print(curr.data);
     }
 }
