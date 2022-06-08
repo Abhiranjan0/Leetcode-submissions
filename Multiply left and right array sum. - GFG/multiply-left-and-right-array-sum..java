@@ -51,8 +51,8 @@ class Complete{
     public static int multiply (int arr[], int n) {
        int lSum = 0, rSum = 0;
        
-       for(int i=0; i<n; i++) {
-           if(i < n/2) {
+       for(int i=0; i<arr.length; i++) {
+           if(i < arr.length/2) {
                lSum += arr[i];
            }
            else {
