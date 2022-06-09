@@ -35,11 +35,8 @@ public class Main {
 
 class Solution {
     int maxProduct(int arr[], int n) {
-        int mul = 1;
         Arrays.sort(arr);
-        for(int i=0; i<n-1; i++) {
-            mul = arr[n-1] * arr[n-2];
-        }
-        return mul;
+       
+        return arr[n-1] * arr[n-2];
     }
 }
