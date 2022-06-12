@@ -40,14 +40,17 @@ class GfG
 {
 	public int[] formatArray(int[] a,int n)
         {
-        for(int i=0; i<n; i++) {
-            if(i%2 != 0 && a[i] < a[i-1]) {
-                int temp = a[i];
-                a[i] = a[i-1];
-                a[i-1] = temp;
-            } 
-            a[i] = a[i];
-        }
+        // for(int i=0; i<n; i++) {
+        //     if(i%2 != 0 && a[i] < a[i-1]) {
+        //         int temp = a[i];
+        //         a[i] = a[i-1];
+        //         a[i-1] = temp;
+        //     } 
+        //     a[i] = a[i];
+        // }
+        // return a;
+        
+        Arrays.sort(a);
         return a;
 	}
 }
