@@ -63,10 +63,10 @@ class Solution {
     
     public void deleteAlternate (Node head){
        Node curr = head;
+       
        while(curr != null && curr.next != null) {
            curr.next = curr.next.next;
            curr = curr.next;
        }
-       
     }
 }
